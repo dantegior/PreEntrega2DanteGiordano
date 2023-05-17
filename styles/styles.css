@@ -1,0 +1,91 @@
+@font-face {
+    font-family: paso-vision;
+    src: url(../fuentes/Futura\ Condensed.ttf);
+}
+@font-face {
+    font-family: soluciones-visuales;
+    src: url(../fuentes/Saniretro.ttf);
+}
+
+
+*{
+padding: 0;
+margin: 0;
+}
+
+
+
+header{
+    background-color: rgb(187, 226, 169);
+}
+
+nav {
+
+    font-family: soluciones-visuales;
+    font-size: 24px;
+}
+h1{
+    text-align: center;
+    padding: 15px;
+    font-family: soluciones-visuales;
+    font-size: 50px;
+}
+h3 {
+    font-family: paso-vision;
+    font-size: 27px;
+    font-weight: lighter;
+    padding: 20px;
+    
+}
+.descripcion {
+    text-align: center;
+    
+}  
+
+.descripcion-multifocales {
+    display: flex;
+    justify-content: center;
+}
+
+
+.quienes-somos {
+    display: flex;
+    justify-content: right;
+    padding: 15px;
+    border-radius: 20px;
+    height: 400px;
+}
+
+ul{
+   text-align:center; 
+}
+
+ul li {
+    list-style: none; 
+    display: inline-block;   
+    margin: 0px 20px
+}
+
+ul li a {
+    color: rgb(30, 53, 45);
+    text-decoration: none;
+    text-decoration: none;
+}
+
+.principal img{
+    width: 48%;
+    height: 300px;
+}
+
+
+p {
+    color: rgb(30, 53, 45);
+    font-family: paso-vision;
+    font-size: 24px;
+    
+}
+
+.flex-horizontal-center {
+    display: flex;
+    justify-content: center;
+}
