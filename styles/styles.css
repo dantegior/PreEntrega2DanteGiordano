@@ -9,18 +9,23 @@
 
 
 *{
-padding: 0;
-margin: 0;
+    padding: 0;
+    margin: 0;
 }
 
 
-
-header{
+.container-fluid{
     background-color: rgb(187, 226, 169);
+        
+}
+
+.navbar-collapse{
+    flex-basis: 100%;
+    flex-grow: initial;
+    align-items: center;
 }
 
 nav {
-
     font-family: soluciones-visuales;
     font-size: 24px;
 }
@@ -31,13 +36,14 @@ h1{
     font-size: 50px;
 }
 h3 {
+    text-align: center;
     font-family: paso-vision;
     font-size: 27px;
     font-weight: lighter;
     padding: 20px;
     
 }
-.descripcion {
+.subtitulo1 {
     text-align: center;
     
 }  
@@ -47,26 +53,17 @@ h3 {
     justify-content: center;
 }
 
-
-.quienes-somos {
-    display: flex;
-    justify-content: right;
-    padding: 15px;
-    border-radius: 20px;
-    height: 400px;
-}
-
 ul{
    text-align:center; 
 }
 
-ul li {
+ol li {
     list-style: none; 
-    display: inline-block;   
+    display: inline-blockc;   
     margin: 0px 20px
 }
 
-ul li a {
+ol li a {
     color: rgb(30, 53, 45);
     text-decoration: none;
     text-decoration: none;
@@ -82,10 +79,95 @@ p {
     color: rgb(30, 53, 45);
     font-family: paso-vision;
     font-size: 24px;
-    
+    padding: 20px;
+    text-align: justify;
 }
 
 .flex-horizontal-center {
     display: flex;
     justify-content: center;
 }
+
+.content-image-desc {
+    display: flex;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.content-image {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.content-image-desc.right-img {
+    flex-direction: row-reverse;
+}
+
+img.multifocales{
+    border-radius: 20px;
+}
+
+/*footer*/
+footer{
+    background-color: rgb(187, 226, 169);
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.footer-datos{
+    text-align: center;
+}
+i{
+    font-size: 1.8rem;
+    text-align: center;
+}
+/*galeria-sol*/
+.galeria-sol{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+}
+/*galeria-receta*/
+.galeria-receta{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+}
+/*gleria-contactologia*/
+.galeria-contactologia{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+}
+/*galeria-audifonos*/
+.galeria-audifonos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+}
+
+
+/*media-queries*/
+/*tablet*/
+@media only screen and (max-width: 768px) {
+    .content-image-desc {
+        flex-direction: column-reverse !important;
+    }
+
+     /*galeria-sol*/
+     .galeria-sol {
+        flex-direction: column;
+        align-items: center;
+    }
+    /*galeria-receta*/
+    .galeria-receta {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+    
