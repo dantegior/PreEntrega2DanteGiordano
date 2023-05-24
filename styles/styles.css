@@ -160,14 +160,12 @@ i{
     }
 
      /*galeria-sol*/
-     .galeria-sol {
-        flex-direction: column;
-        align-items: center;
+     
     }
     /*galeria-receta*/
     .galeria-receta {
         flex-direction: column;
         align-items: center;
     }
-}
+
     
